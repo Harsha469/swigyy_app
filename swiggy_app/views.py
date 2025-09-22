@@ -60,6 +60,9 @@ class Profile(Resource):
         user = UsersTable.query.get(current_user_id)
         return {'logged_in_as': user.name}, 200
 
+
+#hello how are you
+
 api.add_resource(Profile, '/api/profile')
 api.add_resource(Users, '/api/users')
 api.add_resource(Register, '/api/register')
